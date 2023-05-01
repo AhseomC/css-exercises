@@ -1,6 +1,10 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px
 }
 
 .logo {
@@ -9,11 +13,15 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+
 }
 
 ul {
-  /* this removes the dots on the list items*/
+  gap: 12px;
   list-style-type: none;
+  display: flex;
+  /* In chrome, the browser declare padding of ul tag to be 40px. Therefore you should have remove it*/
+  padding: 0px;
 }
 
 a {
@@ -23,3 +31,4 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
